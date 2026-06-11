@@ -4,7 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rumo - Legal</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0B0F17 0%, #1A1F2E 100%);
+            color: #E2E8F0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 48px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 8px;
+            background: linear-gradient(135deg, #6366F1, #818CF8);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header p {
+            color: #94A3B8;
+            font-size: 1.1rem;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 16px;
+            margin-bottom: 48px;
+        }
+
+        .card {
+            background: #1E293B;
+            border: 1px solid #334155;
+            border-radius: 16px;
+            padding: 24px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: block;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+            border-color: #6366F1;
+            box-shadow: 0 8px 32px rgba(99, 102, 241, 0.2);
+        }
+
+        .card .icon {
+            font-size: 2rem;
+            display: block;
+            margin-bottom: 12px;
+        }
+
+        .card h2 {
+            color: #E2E8F0;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            color: #94A3B8;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: #64748B;
+            font-size: 0.85rem;
+            padding-top: 24px;
+            border-top: 1px solid #334155;
+        }
+
+        .footer p {
+            margin-bottom: 4px;
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 24px 16px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
     <div class="container">
