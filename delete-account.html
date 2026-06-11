@@ -4,7 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Excluir Conta - Rumo</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', sans-serif;
+            background: linear-gradient(135deg, #0B0F17 0%, #1A1F2E 100%);
+            color: #E2E8F0;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        .container { max-width: 800px; margin: 0 auto; padding: 40px 24px; }
+        .back-link { display: inline-block; color: #818CF8; text-decoration: none; margin-bottom: 24px; font-weight: 500; }
+        .back-link:hover { color: #6366F1; }
+        .content { background: #1E293B; border: 1px solid #334155; border-radius: 16px; padding: 32px; margin-bottom: 32px; }
+        .content h1 { font-size: 1.8rem; margin-bottom: 8px; }
+        .last-update { color: #64748B; font-size: 0.85rem; margin-bottom: 32px; font-style: italic; }
+        section { margin-bottom: 28px; }
+        section h2 { color: #818CF8; font-size: 1.15rem; margin-bottom: 12px; font-weight: 700; }
+        section h3 { color: #A5B4FC; font-size: 1rem; margin-top: 16px; margin-bottom: 8px; font-weight: 600; }
+        section p { margin-bottom: 12px; color: #CBD5E1; }
+        ul, ol { margin-left: 20px; margin-bottom: 12px; }
+        li { margin-bottom: 6px; color: #CBD5E1; }
+        strong { color: #E2E8F0; }
+        .footer { text-align: center; color: #64748B; font-size: 0.85rem; padding-top: 24px; border-top: 1px solid #334155; }
+        @media (max-width: 640px) { .container { padding: 20px 16px; } .content { padding: 20px; } .content h1 { font-size: 1.5rem; } }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -16,24 +40,16 @@
             
             <section>
                 <h2>Como excluir sua conta</h2>
-                <p>Você pode excluir sua conta e todos os dados associados de duas formas:</p>
-                
                 <h3>Opção 1: Pelo aplicativo</h3>
                 <ol>
                     <li>Abra o aplicativo Rumo</li>
                     <li>Vá em <strong>Ajustes</strong> (ícone de engrenagem)</li>
-                    <li>Role até o final</li>
                     <li>Toque em <strong>"Excluir minha conta"</strong></li>
                     <li>Confirme a exclusão</li>
                 </ol>
                 
                 <h3>Opção 2: Por email</h3>
-                <p>Envie um email para <strong>contato@rumo.app</strong> com:</p>
-                <ul>
-                    <li>Assunto: "Solicitação de exclusão de conta"</li>
-                    <li>Seu UID do aplicativo (encontrado em Ajustes)</li>
-                    <li>Motivo da exclusão (opcional)</li>
-                </ul>
+                <p>Envie um email para <strong>contato@rumo.app</strong> com o assunto "Solicitação de exclusão de conta".</p>
             </section>
             
             <section>
@@ -41,35 +57,14 @@
                 <ul>
                     <li>Todos os seus objetivos e metas</li>
                     <li>Histórico de check-ins e streaks</li>
-                    <li>Dados de perfil (nome, foto)</li>
-                    <li>Preferências e configurações</li>
-                    <li>Conta de autenticação (Firebase)</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h2>Tempo de exclusão</h2>
-                <p>Após a solicitação:</p>
-                <ul>
-                    <li>Seus dados são removidos imediatamente do aplicativo</li>
-                    <li>Dados de backup podem levar até 30 dias para serem completamente removidos</li>
-                    <li>Você receberá uma confirmação por email (se fornecido)</li>
+                    <li>Dados de perfil</li>
+                    <li>Conta de autenticação</li>
                 </ul>
             </section>
             
             <section>
                 <h2>Importante</h2>
-                <ul>
-                    <li>A exclusão é <strong>irreversível</strong></li>
-                    <li>Todos os dados serão permanentemente removidos</li>
-                    <li>Você pode criar uma nova conta a qualquer momento</li>
-                    <li>Dados anônimos agregados (estatísticas) não são afetados</li>
-                </ul>
-            </section>
-            
-            <section>
-                <h2>Dúvidas?</h2>
-                <p>📧 <strong>contato@rumo.app</strong></p>
+                <p>A exclusão é <strong>irreversível</strong>. Todos os dados serão permanentemente removidos.</p>
             </section>
         </div>
         
